@@ -1,10 +1,22 @@
 javascript:(async function(){
   // 例：末尾に ?v=日付 や ?t=タイムスタンプ を追加してキャッシュを回避する
   const cacheBuster = `?t=${Date.now()}`;
-  const CSS_URL = `https://espio999.github.io/Filter20261003/panel.css${cacheBuster}`;
-  const HTML_URL = `https://espio999.github.io/Filter20261003/panel.html${cacheBuster}`;
+  const GitHubURL = `https://espio999.github.io/Hatena-PARKS-Filter/`;
+  const jsDelivrURL = `https://cdn.jsdelivr.net/gh/espio999/Hatena-PARKS-Filter@main/`;
+
+  const panelCSS = `panel.css`;
+  const panelHTML = `panel.html`;
+  const panelScript = `panel.js`;
+
+  //const CSS_URL = `${GitHubURL}${panelCSS}${cacheBuster}`;
+  const HTML_URL = `${GitHubURL}${panelHTML}${cacheBuster}`;
+  
+  const CSS_URL = `${jsDelivrURL}${panelCSS}${cacheBuster}`;
+  //const HTML_URL = `${jsDelivrURL}${panelHTML}${cacheBuster}`;
+  
   const script = document.createElement("script");
-  script.src = `https://espio999.github.io/Filter20261003/panel.js${cacheBuster}`;
+  //script.src = `${GitHubURL}${panelScript}${cacheBuster}`;
+  script.src = `${jsDelivrURL}${panelScript}${cacheBuster}`;
   
   const panel = document.getElementById("parks-filter-panel");
   if (panel) {
