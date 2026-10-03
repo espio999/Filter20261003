@@ -1,0 +1,97 @@
+#parks-filter-panel {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999999;
+  background: #fff;
+  color: #333;
+  border: 2px solid #4C9D33;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-family: sans-serif;
+  font-size: 13px;
+  width: 280px;
+}
+/* ===== default ===== */
+/*
+#parks-filter-panel .pf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+*/
+
+/* ===== simple & clean ===== */
+#parks-filter-panel .pf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d4e7d0; /* 線も少し緑寄りに合わせると綺麗です */
+  padding: 8px 10px; /* 全体にパディングを入れて領域を確保 */
+  
+  /* 背景色と文字色 */
+  background-color: #f2f8f1; /* 極めて薄い緑色 */
+  color: #4C9D33;
+  
+  /* ハンドラ（掴みどころ）としての視覚効果 */
+  cursor: grab; /* マウスホバー時に「手」のカーソルにする */
+  border-radius: 4px 4px 0 0; /* 角丸パネルの場合の上部フィット */
+}
+
+/* ドラッグ中のカーソル指定 */
+#parks-filter-panel .pf-header:active {
+  cursor: grabbing;
+}
+
+#parks-filter-panel .pf-title {
+  color: #4C9D33;
+  font-weight: bold;
+}
+#parks-filter-panel .pf-close {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+#parks-filter-panel .pf-group {
+  margin-bottom: 10px;
+}
+#parks-filter-panel .pf-label {
+  font-weight: bold;
+  display: block;
+}
+#parks-filter-panel input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px;
+  margin: 3px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#parks-filter-panel .pf-modes {
+  font-size: 12px;
+}
+#parks-filter-panel .pf-actions {
+  display: flex;
+  gap: 6px;
+}
+#parks-filter-panel button.pf-btn {
+  flex: 1;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
+#parks-filter-panel #pf-apply {
+  background: #4C9D33;
+}
+#parks-filter-panel #pf-reset {
+  background: #888;
+}
