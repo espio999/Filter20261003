@@ -5,7 +5,6 @@ javascript:(async function(){
   const HTML_URL = `https://espio999.github.io/Filter20261003/panel.html${cacheBuster}`;
   const script = document.createElement("script");
   script.src = `https://espio999.github.io/Filter20261003/panel.js${cacheBuster}`;
-  document.head.appendChild(script);
   
   const panel = document.getElementById("parks-filter-panel");
   if (panel) {
@@ -31,6 +30,7 @@ javascript:(async function(){
     container.id = "parks-filter-panel";
     container.innerHTML = htmlText;
     document.body.appendChild(container);
+    document.head.appendChild(script);
 
     // イベントハンドラとロジックの定義
     function getParentItem(node) {
