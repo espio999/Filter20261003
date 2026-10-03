@@ -1,5 +1,7 @@
 # Hatena PARKS Filter (Bookmarklet)
 
+<img width="286" height="361" alt="filter" src="https://github.com/user-attachments/assets/f7d565fc-1815-4a51-a14a-84b223a850fc" />
+
 「Hatena PARKS」向けのフィルタリング用ブックマークレットです。
 ページ内のコンテンツを**パーク名**・**スレッド名**・**投稿者**で絞り込んだり、除外（ミュート）したりすることができます。
 
@@ -37,6 +39,22 @@
 
 > 💡 **カンマ区切りでの複数指定**  
 > キーワード入力欄にカンマ（`,` または `，`）を入れることで、複数のキーワードを同時に指定できます。
+
+### 使用例
+<table>
+<tr>
+<th></th><th>適用前</th><th>絞り込み</th><th>除外</th>
+</tr>
+<tr>
+<td nowrap>ホーム<td><img width="1494" height="1010" alt="home2" src="https://github.com/user-attachments/assets/01b23c2f-c045-4d91-9d78-e42839845696" /></td><td><img width="1494" height="1010" alt="home3" src="https://github.com/user-attachments/assets/bbd7ef67-e227-4440-8859-5f3eda20e772" /></td><td><img width="1494" height="1010" alt="home4" src="https://github.com/user-attachments/assets/c8dd5aad-1838-47d6-afdb-fd5c59debc50" /></td>
+</tr>
+<tr>
+<td nowrap>新着スレッド</td><td><img width="1494" height="1010" alt="new1" src="https://github.com/user-attachments/assets/f8308bcd-e237-40f1-a4a4-c512416b53df" /></td><td><img width="1494" height="1010" alt="new2" src="https://github.com/user-attachments/assets/5cef536a-6f5b-4d0a-bdd1-2e975ff09f87" /></td><td><img width="1494" height="1010" alt="new3" src="https://github.com/user-attachments/assets/b8981afd-0b2b-4634-87a9-467193e3536e" /></td>
+</tr>
+<tr>
+<td nowrap>タイムライン</td><td><img width="1494" height="1010" alt="timeline1" src="https://github.com/user-attachments/assets/3a2c0048-d40e-40d8-b580-ce4dcfe26ab2" /></td><td><img width="1494" height="1010" alt="timeline2" src="https://github.com/user-attachments/assets/2b1c2b46-a2e5-44e2-a422-767b2c155c6c" /></td><td><img width="1494" height="1010" alt="timeline4" src="https://github.com/user-attachments/assets/bdf3626a-b0cf-4761-a18e-6efee24cfe13" /></td>
+</tr>
+</table>
 
 ---
 
