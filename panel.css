@@ -109,9 +109,9 @@
   margin: 20px auto;           /* 横中央配置（上下余白20px） */
   border-top: 3px solid #333;  /* 上側に太さ3pxの横線 */
   padding-top: 8px;            /* 線と下の文字との間隔 */
-  text-align: right;           /* 中の文字を右寄せ */
 }
 #parks-filter-panel .pf-version {
+  display: block;
+  text-align: right;
   font-size: 9px;
-  text-align: right;           /* 中の文字を右寄せ */
 }
