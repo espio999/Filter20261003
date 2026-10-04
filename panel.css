@@ -58,7 +58,7 @@
 #parks-filter-panel .pf-close {
   background: none;
   border: none;
-  z-index: 10;
+  z-index: 999990;
   font-size: 16px;
   cursor: pointer;
 }
