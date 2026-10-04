@@ -34,6 +34,7 @@
   border-bottom: 1px solid #e0e0e0;
   padding: 8px 10px;
   touch-action: none;
+  pointer-events: none;
   
   /* グラデーションで少し立体感を出す */
   background: linear-gradient(180deg, #f7faf6 0%, #edf5eb 100%);
