@@ -4,6 +4,7 @@
 
 「Hatena PARKS」向けのフィルタリング用ブックマークレットです。
 ページ内のコンテンツを**パーク名**・**スレッド名**・**投稿者**で絞り込んだり、除外（ミュート）したりすることができます。
+ブックマークレットはPCだけでなく、タブレットやスマートフォンでも動作します。
 
 ---
 
@@ -55,6 +56,25 @@
 <td nowrap>タイムライン</td><td><img width="1494" height="1010" alt="timeline1" src="https://github.com/user-attachments/assets/3a2c0048-d40e-40d8-b580-ce4dcfe26ab2" /></td><td><img width="1494" height="1010" alt="timeline2" src="https://github.com/user-attachments/assets/2b1c2b46-a2e5-44e2-a422-767b2c155c6c" /></td><td><img width="1494" height="1010" alt="timeline4" src="https://github.com/user-attachments/assets/bdf3626a-b0cf-4761-a18e-6efee24cfe13" /></td>
 </tr>
 </table>
+
+### タブレット、スマートフォン
+ブックマークレットは、タブレットやスマートフォンでも動作します。
+<table>
+<tr>
+<th>iPad</th><th>Android<br />Surface Duo</th><th>Android<br />Poxel 8a</th>
+</tr>
+<tr>
+<td><img width="2224" height="1668" alt="IMG_0117" src="https://github.com/user-attachments/assets/5c7a4c8b-e465-4536-8bbb-3890591a8aa2" />
+</td><td><img width="2784" height="1800" alt="Screenshot_20261004-144708" src="https://github.com/user-attachments/assets/928df333-8fa1-4837-9032-bf4c46fc94fe" />
+</td><td><img width="864" height="1920" alt="Screenshot_20261004-145235" src="https://github.com/user-attachments/assets/bf0cdccd-da96-41b2-9566-3a41e6397fc7" />
+</td>
+</tr>
+</table>
+
+モバイル環境では、ブックマークレットの呼び出し方にご注意ください。  
+ブックマークレットをブックマークに登録する際に、名前を付けます。  
+ブックマークレットを呼び出すとき、アドレスバーに名前を入力し、表示されたブックマークレットを選択することで、動作させることができます。  
+ブックマークから呼び出しても、目的のタブではなく、新規タブで動作する場合があるのです。
 
 ---
 
