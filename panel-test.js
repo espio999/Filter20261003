@@ -68,6 +68,23 @@
     }
   }
 
+  const closeBtn = document.getElementById("pf-close");
+  if (closeBtn) {
+    // ドラッグイベント（pointerdown）が閉じるボタンまで連鎖しないようにブロック
+    closeBtn.addEventListener("pointerdown", function(e) {
+      e.stopPropagation();
+    });
+
+    // クリック（タップ）処理
+    closeBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      const panel = document.getElementById("parks-filter-panel");
+      if (panel) {
+        panel.style.display = "none";
+      }
+    });
+  }
+
   // 要素を取得してドラッグを有効化
   const panel = document.getElementById("parks-filter-panel");
   if (panel) {
