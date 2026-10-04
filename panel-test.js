@@ -75,10 +75,5 @@
     if (header) {
       makeDraggable(panel, header);
     }
-
-    const footer = panel.querySelector(".pf-footer");
-    if (footer) {
-      makeDraggable(panel, footer);
-    }
   }
 })();

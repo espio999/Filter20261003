@@ -2,7 +2,7 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 999999;
+  z-index: 999990;
   background: #fff;
   color: #333;
   border: 2px solid #4C9D33;
@@ -58,7 +58,7 @@
 #parks-filter-panel .pf-close {
   background: none;
   border: none;
-  z-index: 999990;
+  z-index: 999999;
   font-size: 16px;
   cursor: pointer;
 }
@@ -98,34 +98,4 @@
 }
 #parks-filter-panel #pf-reset {
   background: #888;
-}
-
-/* ===== hover gradaton ===== */
-#parks-filter-panel .pf-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 8px 10px;
-  touch-action: none;
-  
-  /* グラデーションで少し立体感を出す */
-  background: linear-gradient(180deg, #f7faf6 0%, #edf5eb 100%);
-  color: #4C9D33;
-  cursor: grab;
-  transition: background-color 0.2s ease;
-}
-
-#parks-filter-panel .pf-footer:hover {
-  background: #e4f0e2; /* ホバーで少し色を濃く */
-}
-
-#parks-filter-panel .pf-footer:active {
-  cursor: grabbing;
-  background: #d8e8d5; /* 掴んだ（クリックした）瞬間 */
-}
-
-#parks-filter-panel .pf-version {
-  font-size: 9px;
 }
