@@ -100,15 +100,17 @@
   background: #888;
 }
 #parks-filter-panel .pf-line {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  padding: 8px 10px;
-  height: 2;
   width: 80%;
+  border-top: 3px solid #333;
+  margin: 20px auto;
 }
-#parks-filter-panel .pf-version {
+.pf-footer {
+  width: 80%;                  /* 線幅：画面（親要素）の80% */
+  margin: 20px auto;           /* 横中央配置（上下余白20px） */
+  border-top: 3px solid #333;  /* 上側に太さ3pxの横線 */
+  padding-top: 8px;            /* 線と下の文字との間隔 */
+  text-align: right;           /* 中の文字を右寄せ */
+}
+.pf-version {
   font-size: 9px;
-  align-items: right;
 }
