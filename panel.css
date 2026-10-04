@@ -61,6 +61,7 @@
   z-index: 999999;
   font-size: 16px;
   cursor: pointer;
+  touch-action: manipulation;
 }
 #parks-filter-panel .pf-group {
   margin-bottom: 10px;
