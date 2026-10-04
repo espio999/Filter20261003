@@ -2,8 +2,11 @@
   // ドラッグ可能にする関数
   function makeDraggable(element, handle) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    handle.onmousedown = dragMouseDown;
+    
+    //handle.onmousedown = dragMouseDown;
+    handle.onpointerdown = dragPointerDown;
 
+    /*
     function dragMouseDown(e) {
       e = e || window.event;
       e.preventDefault();
@@ -11,6 +14,30 @@
       pos4 = e.clientY;
       document.onmouseup = closeDragElement;
       document.onmousemove = elementDrag;
+    }
+    */
+
+    function dragPointerDown(e) {
+      e = e || window.event;
+
+      // クリックされた対象がボタンなどのインタラクティブ要素（pf-close等）であればドラッグを開始しない
+      if (e.target.closest('#pf-close, button, input, select, textarea')) {
+        return;
+      }
+
+      e.preventDefault();
+
+      // ポインターのキャプチャ（要素外へドラッグしても追従させる）
+      if (handle.setPointerCapture) {
+        handle.setPointerCapture(e.pointerId);
+      }
+
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+
+      document.onpointermove = elementDrag;
+      document.onpointerup = closeDragElement;
+      document.onpointercancel = closeDragElement;
     }
 
     function elementDrag(e) {
@@ -24,9 +51,26 @@
       element.style.left = (element.offsetLeft - pos1) + "px";
     }
 
+    /*
     function closeDragElement() {
       document.onmouseup = null;
       document.onmousemove = null;
+    }
+    */
+
+    function closeDragElement(e) {
+      // ポインターのキャプチャを解除
+      if (handle.releasePointerCapture && e && e.pointerId) {
+        try {
+          handle.releasePointerCapture(e.pointerId);
+        } catch (err) {
+          // キャプチャされていない場合の例外回避
+        }
+      }
+
+      document.onpointermove = null;
+      document.onpointerup = null;
+      document.onpointercancel = null;
     }
   }
 
