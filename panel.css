@@ -114,6 +114,7 @@
   touch-action: none;
 }
 #parks-filter-panel .pf-version {
+  display: block;
   text-align: right;
   font-weight: bold;
 }
