@@ -19,6 +19,12 @@
 
     function dragPointerDown(e) {
       e = e || window.event;
+
+      // クリックされた対象がボタンなどのインタラクティブ要素（pf-close等）であればドラッグを開始しない
+      if (e.target.closest('#pf-close, button, input, select, textarea')) {
+        return;
+      }
+
       e.preventDefault();
 
       // ポインターのキャプチャ（要素外へドラッグしても追従させる）
@@ -66,23 +72,6 @@
       document.onpointerup = null;
       document.onpointercancel = null;
     }
-  }
-
-  const closeBtn = document.getElementById("pf-close");
-  if (closeBtn) {
-    // ドラッグイベント（pointerdown）が閉じるボタンまで連鎖しないようにブロック
-    closeBtn.addEventListener("pointerdown", function(e) {
-      e.stopPropagation();
-    });
-
-    // クリック（タップ）処理
-    closeBtn.addEventListener("click", function(e) {
-      e.preventDefault();
-      const panel = document.getElementById("parks-filter-panel");
-      if (panel) {
-        panel.style.display = "none";
-      }
-    });
   }
 
   // 要素を取得してドラッグを有効化
