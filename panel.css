@@ -113,4 +113,5 @@
 }
 #parks-filter-panel .pf-version {
   font-size: 9px;
+  text-align: right;           /* 中の文字を右寄せ */
 }
