@@ -99,22 +99,3 @@
 #parks-filter-panel #pf-reset {
   background: #888;
 }
-#parks-filter-panel .pf-line {
-  width: 80%;
-  border-top: 10px solid #333;
-  margin: 20px auto;
-}
-#parks-filter-panel .pf-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 8px 10px;
-  touch-action: none;
-}
-#parks-filter-panel .pf-version {
-  display: block;
-  text-align: right;
-  font-weight: bold;
-}
